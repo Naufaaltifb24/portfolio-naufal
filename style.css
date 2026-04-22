@@ -46,7 +46,9 @@
   .hero-content {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 50px;
+    flex-wrap: wrap; /* INI KUNCI */
   }
   
   .hero span {
@@ -151,4 +153,29 @@
   
   .social a:hover::before {
     opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .photo img {
+      width: 150px;
+    }
+  
+    .text h1 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .social {
+      justify-content: center;
+    }
+  
+    .btn {
+      display: inline-block;
+    }
   }
