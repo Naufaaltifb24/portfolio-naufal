@@ -4,23 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naufal Portfolio</title>
+
+  <!-- ICON -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-  AOS.init();
-</script>
 </head>
+
 <body>
 
 <!-- NAV -->
 <nav>
-  <h2>Naufal</h2>
-  <ul>
+  <h2>Muhammad Naufal Fikri Haidar</h2>
+
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul id="menu">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#projects">Projects</a></li>
   </ul>
 </nav>
@@ -28,52 +37,171 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
+    
     <div class="text">
       <h1>Hello, I'm <span>Naufal</span></h1>
       <p id="typing"></p>
+
       <div class="social">
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://www.instagram.com/mnfhvoid.dev" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+
+        <a href="https://github.com/Naufaaltifb24" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/muhammad-naufal-fikri-haidar-705481405" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
       </div>
-        <a href="#projects" class="btn">See My Work</a>
+
+      <a href="#projects" class="btn">See My Work</a>
     </div>
 
     <div class="photo">
       <img src="profile.jpg" alt="profile">
     </div>
+
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
+
   <a href="cv.pdf" download class="btn">Download CV</a>
+
   <p>
     Saya mahasiswa Informatika yang memiliki minat kuat di bidang networking dan web development. 
     Terbiasa menggunakan HTML, CSS, dan JavaScript serta memahami dasar konfigurasi jaringan seperti Mikrotik.
-    </p>
+  </p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-  <h2>Skills</h2>
+  <h2>Technical Skills</h2>
+
+  <div class="skill-container">
+
+    <div class="skill-box">
+      <h3>Networking</h3>
+      <ul>
+        <li>TCP/IP</li>
+        <li>Routing & Switching</li>
+        <li>VLAN</li>
+        <li>OSPF</li>
+        <li>BGP</li>
+        <li>NAT</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>Cyber Security</h3>
+      <ul>
+        <li>Firewall</li>
+        <li>IDS/IPS</li>
+        <li>Vulnerability Assessment</li>
+        <li>Penetration Testing</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h2>Certifications</h2>
+
   <div class="cards">
-    <div class="card">HTML</div>
-    <div class="card">CSS</div>
-    <div class="card">JavaScript</div>
-    <div class="card">Mikrotik</div>
+
+    <div class="card">
+      <h3>CCNA</h3>
+      <p>Cisco Certified Network Associate</p>
+      <a href="#" class="btn">View Certificate</a>
+    </div>
+
+    <div class="card">
+      <h3>MTCNA</h3>
+      <p>MikroTik Certified Network Associate</p>
+      <a href="#" class="btn">View Certificate</a>
+    </div>
+
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <h2>Projects</h2>
+  <h2>Featured Projects</h2>
+
   <div class="cards">
-    <div class="card">Website Company Profile</div>
-    <div class="card">Network Simulation</div>
+
+    <div class="card">
+      <h3>Network Simulation Lab</h3>
+      <p>Implementasi OSPF & BGP menggunakan Cisco Packet Tracer</p>
+    
+      <!-- INI TAMBAHIN DI SINI -->
+      <span class="tag">OSPF</span>
+      <span class="tag">BGP</span>
+      <span class="tag">Packet Tracer</span>
+    
+      <br><br>
+    
+      <a href="#" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Cyber Security Lab</h3>
+      <p>Simulasi firewall & IDS</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+
   </div>
 </section>
+
+<!-- SCRIPT -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="script.js"></script>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Send a Message</h2>
+
+  <div class="contact-box">
+    <div class="input-row">
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+    </div>
+
+    <input type="email" placeholder="Email Address">
+    <input type="text" placeholder="Subject">
+    <textarea placeholder="Your message..."></textarea>
+
+    <button class="btn">Send Message</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <h2 class="footer-name">Muhammad Naufal Fikri Haidar</h2>
+  <p>Informatics Student & Network Enthusiast</p>
+
+  <div class="footer-social">
+    <a href="https://github.com/Naufaaltifb24"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/muhammad-naufal-fikri-haidar-705481405"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:emailkamu@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <hr>
+
+  <p class="copy">
+    © 2026 Muhammad Naufal Fikri Haidar — Made with ❤️ For Cofee and lots of Cigarettes
+  </p>
+</footer>
 
 </body>
 </html>
