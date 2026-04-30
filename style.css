@@ -591,6 +591,26 @@ section {
   color: var(--text-secondary);
 }
 
+.no-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icon-item.no-icon span {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.cert-badge.no-icon {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(0,212,255,0.2);
+}
+
 .custom-icon {
   width: 32px;
   height: 32px;
